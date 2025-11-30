@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body{
+            background-color: rgb(219, 68, 57);
+            font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+            margin: 40px;
+            color: rgb(241, 232, 219);
+        }
+        h2{
+            font-size: 50px;
+            text-align: center;
+        }
+        label{
+            font-size: 28px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="password"]{
+            width: 300px;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            margin-top: 5px;
+            font-size: 18px;
+        }
+        input[type="submit"]{
+            padding: 12px 28px;
+            font-size: 24px;
+            background-color: rgb(241, 232, 219);
+            color: rgb(219, 68, 57);
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+<form name="regForm" action="media_for_WP1.html" method="get">
+
+    <h2>Sign-up Details</h2>
+
+    <p>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" maxlength="25">
+    </p>
+
+    <p>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" maxlength="25">
+    </p>
+
+    <p>
+        <label for="dob">DOB:</label><br>
+        <input type="date" id="dob" name="dob">
+    </p>
+
+    <p>
+        <label for="pswd">Password:</label><br>
+        <input type="password" id="pswd" name="pswd" maxlength="15">
+    </p>
+
+    <p>
+        <label>Gender:</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+    </p>
+
+    <p><input type="submit" value="Sign Up"></p>
+
+</form>
+
+</body>
+</html>
